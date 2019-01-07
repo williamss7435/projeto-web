@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Clínica De Vacinação</title>
+	<link rel="stylesheet" type="text/css" href="lib/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/Jquery UI/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="lib/Jquery/jquery-3.1.1.min.js"></script>
+	<script src="lib/Jquery UI/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/json.js"></script>
+</head>
+<body>
+	<header>
+
+		<div class="black-header">Clínica De Vacinação</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="banner">
+					<nav>
+						<div class="row" id="menu">
+							<ul>
+								<li><a class="btn btn-default" href="index.html">Login</a></li>
+								<li><a class="btn btn-danger" href="cadastro.html">Cria Um Novo Usuário</a></li>
+								<li><a class="btn btn-default" href="atendimentos.html">Verificar Todos Os Atendimentos</a></li>
+								<li><a class="btn btn-default" href="dados.html">Dados Do Grupo</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<section>
+		<div class="container-fluid">
+			<div class="row text-center"><span class="txt-cadastro">Atendimento</span></div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pag-cadastro"><br>
+					<label class="lbl-cadastro center-block text-center">Informações Pessoais</label><br>
+					<label class="label label-primary" for="nome">Nome Completo</label><small id="sm-nome"></small><input type="text" name="nome" id="nome" class="form-control"><br>
+					<label class="label label-primary" for="senha">Senha</label><small id="sm-senha"></small><input type="password" name="senha" id="senha" class="form-control"><br>
+					<label class="label label-primary" for="data-n">Data de Nascimento</label><small id="sm-data-n"></small><input type="text" name="data-n" id="data-n" class="form-control"><br>
+					<label class="label label-primary" for="tel">(DDD) Telefone</label><small id="sm-tele"></small><input type="text" name="tele" id="tele" class="form-control"><br>
+					<label class="label label-primary" for="cel">(DDD) Celular</label><small id="sm-celu"></small><input type="text" name="celu" id="celu" class="form-control"><br><br>
+					<label class="lbl-cadastro center-block text-center">Endereço</label><br>
+					<label class="label label-primary" for="logradouro">Logradouro</label><small id="sm-logra"></small><input type="text" name="logradouro" id="logradouro" class="form-control"><br>
+					<label class="label label-primary" for="numero">Número</label><small id="sm-numero"></small><input type="text" name="numero" id="numero" class="form-control"><br>
+					<label class="label label-primary" for="cidade">Cidade</label><small id="sm-cidade"></small><input type="text" name="cidade" id="cidade" class="form-control"><br>
+					<label class="label label-primary" for="cep">CEP</label><small id="sm-cep"></small><input type="text" name="cep" id="cep" class="form-control"><br>
+					<label class="lbl-cadastro center-block text-center">Informações da Consulta</label><br>
+					<label>Escolha as Vacinas a Tomar:</label><small id="sm-vacina"></small><br>
+					<label class="label label-success" for="v-a">Vacina A - R$ 150,00<input type="checkbox" name="vacina" id="v-a" value="150.00"></label>
+					<label class="label label-success" for="v-b">Vacina B - R$ 200,00<input type="checkbox" name="vacina" id="v-b" value="200.00"></label>
+					<label class="label label-success" for="v-c">Vacina C - R$ 300,00<input type="checkbox" name="vacina" id="v-c" value="300.00"></label>
+					<label class="label label-success" for="v-d">Vacina D - R$ 10,00<input type="checkbox" name="vacina" id="v-d" value="10.00"></label><br><br>
+					<select id="profissional">
+						<option value="">Escolha um Profissional Para O Atendimento</option>
+						<option value="Pedro Marcos">Pedro Marcos</option>
+						<option value="Carlos Antonio">Carlos Antonio</option>
+						<option value="Mayara Giane">Mayara Giane</option>
+					</select><small id="sm-pro"></small><br><br>
+					<label class="label label-primary" for="data-c">Data Do Atendimento</label><small id="sm-datac"></small><input type="text" name="data-c" id="data-c" class="form-control">
+					<br><br><br><br>
+					<button id="btn-consulta" class="btn btn-lg btn-danger center-block">Gerar Consulta</button><br>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="msg-cadastro" title="Mensagem do Sistema"></div>
+</body>
+</html>

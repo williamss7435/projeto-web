@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Clínica De Vacinação</title>
+	<link rel="stylesheet" type="text/css" href="lib/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/Jquery UI/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="lib/Jquery/jquery-3.1.1.min.js"></script>
+	<script src="lib/Jquery UI/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+
+		<div class="black-header">Clínica De Vacinação</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="banner">
+					<nav>
+						<div class="row" id="menu">
+							<ul>
+								<li><a class="btn btn-default" href="index.html">Login</a></li>
+								<li><a class="btn btn-default" href="cadastro.html">Cria Um Novo Usuário</a></li>
+								<li><a class="btn btn-danger" href="atendimentos.html">Verificar Todos Os Atendimentos</a></li>
+								<li><a class="btn btn-default" href="dados.html">Dados Do Grupo</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section>
+		<div class="pag-cadastro">
+			<label class="lbl-cadastro center-block text-center">Pesquisar Todos os Atendimentos</label>
+			<button id="btn-todos" class="btn btn-danger form-control">Consultar</button><br>
+		</div>
+	</section>
+
+	<section>
+		<div class="pag-cadastro">
+			<label class="lbl-cadastro center-block text-center">Pesquisar Pelo Nome Do Profissional</label>
+			<select id="profissional">
+						<option value="">Escolha um Profissional Para Fazer a Consulta</option>
+						<option value="Pedro Marcos">Pedro Marcos</option>
+						<option value="Carlos Antonio">Carlos Antonio</option>
+						<option value="Mayara Giane">Mayara Giane</option>
+					</select><small id="sm-pro"></small>
+			<button id="btn-profissional" class="btn btn-danger form-control">Consultar</button>
+		</div>
+	</section>
+
+	<section>
+		<div class="pag-cadastro" id="dialog-pesquisa" title="Pesquisa">
+			
+		</div>
+	</section>
+</body>
+</html>
