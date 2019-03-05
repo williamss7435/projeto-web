@@ -1,6 +1,6 @@
 # Projecto Web 2016
 
->Primeiro projeto na usando HTML, Javascript e CSS
+>Meu orimeiro projeto usando HTML, Javascript e CSS
 
 >Data: 11/2016
 
